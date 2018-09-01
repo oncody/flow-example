@@ -4,15 +4,13 @@
   "description": "An example demonstrating flow",
   "main": "index.js",
   "scripts": {
-    "run-flow": "yarn run flow",
-    "run-babel": "yarn run babel . --out-dir bin"
+    "build": "flow && flow-remove-types index.js -d dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "babel-cli": "latest",
-    "babel-preset-flow": "latest",
-    "flow-bin": "latest"
+    "flow-bin": "latest",
+    "flow-remove-types": "latest"
   }
 }
